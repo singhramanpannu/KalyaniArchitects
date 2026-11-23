@@ -1,0 +1,8 @@
+.pagehead { padding: clamp(3rem, 8vw, 6rem) var(--pad) 0; }
+.pagehead__inner { max-width: 1200px; margin-inline: auto; }
+.pagehead__title { font-size: clamp(2.6rem, 8vw, 6.5rem); font-weight: 300; line-height: 1.02; letter-spacing: -0.01em; text-transform: uppercase; }
+.pagehead .line { display: block; overflow: hidden; padding-bottom: 0.04em; }
+.pagehead .line__inner { display: block; }
+.pagehead__intro { margin-top: 1.75rem; max-width: 46ch; color: var(--c-muted); }
+.pagehead__count { margin-top: 1rem; font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; }
+.pagehead__rule { max-width: 1200px; height: 1px; margin: clamp(2.5rem, 6vw, 4rem) auto 0; background: var(--c-line); transform-origin: left; }

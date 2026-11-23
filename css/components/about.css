@@ -1,0 +1,12 @@
+.about { padding: var(--section-y) var(--pad); }
+.about__inner { display: grid; gap: 2.5rem; max-width: 1200px; margin-inline: auto; align-items: center; }
+.about__image { aspect-ratio: 4 / 5; background: var(--c-line); overflow: hidden; }
+.about__image img { width: 100%; height: 100%; object-fit: cover; }
+.about__title {
+  font-size: clamp(2rem, 4.6vw, 3.5rem); font-weight: 300; line-height: 1.1; text-transform: uppercase; margin-bottom: 1.5rem;
+}
+.about__text { color: var(--c-muted); max-width: 46ch; margin-bottom: 2rem; }
+
+@media (min-width: 768px) {
+  .about__inner { grid-template-columns: 1fr 1fr; gap: clamp(3rem, 7vw, 7rem); }
+}

@@ -1,0 +1,18 @@
+.pgrid-sec { max-width: 1200px; margin-inline: auto; padding: clamp(2rem, 5vw, 3rem) var(--pad) var(--section-y); }
+.filters { display: flex; gap: 1.75rem; margin-bottom: 2.5rem; }
+.filters__btn {
+  padding: 0.5rem 0; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--c-muted); border-bottom: 1px solid transparent; transition: color 0.2s, border-color 0.2s;
+}
+.filters__btn:hover { color: var(--c-text); }
+.filters__btn[aria-pressed="true"] { color: var(--c-text); border-color: currentColor; }
+.pgrid { display: grid; gap: 3rem 1.5rem; }
+.pgrid .pcard { margin: 0; }
+.pgrid .pcard[hidden] { display: none; }
+.pgrid .pcard__img { aspect-ratio: 4 / 5; }
+.pcard__type { display: block; margin-top: 1.25rem; font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--c-muted); }
+.pgrid .pcard__title { margin-top: 0.35rem; }
+.pcard__meta { font-size: 0.85rem; }
+.pcard.is-highlight { outline: 1px solid var(--c-text); outline-offset: 10px; }
+@media (min-width: 768px) { .pgrid { grid-template-columns: repeat(2, 1fr); gap: 4rem 2rem; } }
+@media (min-width: 1200px) { .pgrid { grid-template-columns: repeat(3, 1fr); } }

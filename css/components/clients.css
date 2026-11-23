@@ -1,0 +1,21 @@
+.clients { padding: var(--section-y) 0; }
+.clients__head { max-width: calc(1200px + 2 * var(--pad)); margin: 0 auto 2.5rem; padding-inline: var(--pad); }
+.clients__title { font-size: clamp(2rem, 4.6vw, 3.5rem); font-weight: 300; line-height: 1.1; text-transform: uppercase; }
+.clients__viewport { overflow: hidden; border-block: 1px solid var(--c-line); }
+.clients__track { display: flex; width: max-content; animation: clients-scroll 45s linear infinite; }
+.clients__viewport:hover .clients__track, .clients__viewport:focus-within .clients__track { animation-play-state: paused; }
+.clients__list { display: flex; flex-shrink: 0; list-style: none; }
+.clients__item {
+  display: flex; align-items: center; gap: 0.9rem; white-space: nowrap;
+  padding: 2rem clamp(1.5rem, 4vw, 3.5rem);
+  font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--c-muted);
+}
+.clients__item img { height: 32px; width: auto; filter: grayscale(1); }
+.clients__item img.is-missing { display: none; }
+@keyframes clients-scroll { to { transform: translateX(-50%); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .clients__viewport { overflow-x: auto; }
+  .clients__track { animation: none; }
+  .clients__list[aria-hidden="true"] { display: none; }
+}

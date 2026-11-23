@@ -1,0 +1,18 @@
+:root {
+  --c-bg: #ffffff;
+  --c-text: #111111;
+  --c-muted: #6b6b6b;
+  --c-line: #e8e8e8;
+  --c-brand: #604733;
+  --c-brand-dark: #4a3727;
+  --c-footer: #0d0d0d;
+  --c-wa: #25d366;
+
+  --f-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+
+  --pad: clamp(1.25rem, 5vw, 4rem);
+  --section-y: clamp(4rem, 10vw, 8rem);
+  --nav-h: 72px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
